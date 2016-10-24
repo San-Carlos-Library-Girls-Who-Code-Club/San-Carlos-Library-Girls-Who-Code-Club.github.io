@@ -1,0 +1,78 @@
+nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+nav li{
+	float: left;
+}
+
+nav li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+nav li a:hover{
+	background-color: #111;
+}
+
+#homeImage{
+	margin: auto;
+	margin-top: 2%;
+	margin-bottom: 5%;
+	border: 2px solid black;
+	width: 50%;
+	border-radius: 5%;
+	padding: 1%;
+}
+
+#homeImage img{
+	display: block;
+	margin: auto;
+	width: 100%;
+}
+
+#rules{
+	border: 2px solid black;
+	margin: auto;
+	width: 50%;
+	border-radius: 10%;
+	margin-bottom: 2%;
+}
+
+.footerInfo{
+	display: inline-block;
+}
+
+#location{
+	position: absolute;
+	right: 0px;
+	padding-right: 10px;
+}
+
+#dateAndTime{
+	position: absolute;
+	padding-left: 5px;
+}
+.locationInfo{
+	text-align: center;
+}
+
+#sanCarlos{
+	font-size: 110%;
+}
+
+footer{
+	border-top: 2px solid black;
+}
+
+body{
+
+	background-color: #D3D3D3;
+}
