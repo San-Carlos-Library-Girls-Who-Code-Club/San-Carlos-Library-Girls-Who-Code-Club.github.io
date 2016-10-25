@@ -9,13 +9,14 @@ nav ul{
 
 nav li{
 	float: left;
+	width: 20%;
 }
 
 nav li a{
 	display: block;
 	color: white;
 	text-align: center;
-	padding: 15px 40px;
+	padding: 7%; 
 	text-decoration: none;
 }
 
