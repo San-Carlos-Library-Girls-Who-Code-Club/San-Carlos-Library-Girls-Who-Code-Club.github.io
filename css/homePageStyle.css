@@ -15,10 +15,23 @@
 	width: 100%;
 }
 
-#rules{
-	border: 2px solid black;
+iframe{
+	display: block;
 	margin: auto;
-	width: 80%;
-	border-radius: 10%;
+	width: 65%;
+	height: 600px;
+	border: 2px solid black;
+	margin-bottom: 3%;
+}
+
+#info{
+	display: block;
+	margin: auto;
 	margin-bottom: 5%;
+	width: 60%;
+	padding: 2%;
+	border: 2px solid black;
+	background-color: #6eceb2;
+	color: #01426a;
+	font-size: 120%;
 }
