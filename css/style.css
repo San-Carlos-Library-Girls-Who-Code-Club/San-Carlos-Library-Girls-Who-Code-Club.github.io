@@ -24,6 +24,10 @@ nav li a:hover{
 	background-color: #01204a;
 }
 
+.active{
+	background-color: #01204a;
+}
+
 .footerInfo{
 	display: inline-block;
 }
