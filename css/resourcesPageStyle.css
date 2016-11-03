@@ -25,3 +25,21 @@
 	font-size: 200%;
 	color: #01426a;
 }
+
+#notepad, #github{
+	margin: auto;
+	margin-bottom: 5%;
+	border: 2px solid black;
+	width: 65%;
+}
+
+figure img{
+	display: block;
+	width: 100%;
+}
+
+figure:not(:last-child){
+	display: block;
+	margin-bottom: 3%;
+
+}
