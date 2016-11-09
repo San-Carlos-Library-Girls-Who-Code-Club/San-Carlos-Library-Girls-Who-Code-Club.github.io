@@ -1,0 +1,48 @@
+<!--Comments go here--> 
+<!DOCTYPE html> <!--Creates a HTML5 file-->
+<html> <!--Tells the browser the file is an html document and is the root of the html document-->
+<head> <!--Data about the HTML document but is not displayed on the webpage-->
+	
+<title> Title of the page of the website goes here </title> <!--Displays the title of the webpage in the tabs-->
+
+<meta charset="UTF-8"> <!--Defines the charset the website uses-->
+<meta name="viewport" content="width=device-width, initial-scale=1"> <!--Makes the webpage responsive to the size of the device-->
+<!--width=device-width : matches the screen's width in device-independent pixels-->
+<!--initial-scale=1 : establish a 1:1 relationship between CSS pizels and device-independent pixels-->
+<meta name="description" content="Description of website goes here"> <!--Defines a description of the web page-->
+<meta name="author" content="Author of the page"> <!--Defines the author of the page-->
+
+<link rel="stylesheet" href="url to CSS style sheet"> <!--Connects the HTML document to the external stylesheet in the href-->
+
+</head>
+<body> <!--Defines the document's body and content is displayed on the webpage-->
+	
+<div> <!--Division or a section in an HTML document-->
+
+<table> <!--Creates a table-->
+<tr> <!--Creates a row in the table-->
+<th>Table heading1</th> <!--Creates a column heading-->
+<th>Table heading2</th>
+</tr>
+<tr>
+<td>Row data for first column goes here</td> <!--Displays the data of the table-->
+<td>Row data for second column goes here</td>
+</tr>
+</table>
+
+<button type="button" onclick="location.href='url of webpage';">Name of button goes here</button> <!--Creates a button to a webpage-->
+
+<a href="url to page or website">Words that act like a link</a> <!--Link to another website or webpage-->
+
+<img src="url to picture" alt="Info describing image"> <!--Creates an image-->
+<a href="#" onclick="javascript function name"><img src="url to picture" alt="Info describing image"></a> <!--Creates a clickable image that displays something when clicked-->
+
+<p>Text you want to display</p> <!--Text that is displayed at normal font-->
+
+<h1>Text you want as heading</h1> <!--Text that is displayed that is bold and bigger font-->
+<!-- h1-h6: different size heading sizes-->
+<h6>Text you want as heading</h6> <!--Text that is displayed that is bold but smaller font-->
+		
+</div>
+</body>
+</html>

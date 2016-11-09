@@ -43,3 +43,15 @@ figure:not(:last-child){
 	margin-bottom: 3%;
 
 }
+
+#htmlResource{
+	margin: auto;
+	margin-bottom: 5%;
+	border: 2px solid black;
+	width: 85%;
+}
+
+#htmlResource iframe{
+	width: 100%;
+	height: 850px;
+}
