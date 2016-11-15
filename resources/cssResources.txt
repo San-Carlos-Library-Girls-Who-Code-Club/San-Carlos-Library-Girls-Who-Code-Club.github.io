@@ -1,0 +1,47 @@
+/*Tips:
+	*/*Comments go here*/
+	* To make webpage responsive to size of device use percentages
+*/
+htmlTag {
+	
+}
+
+#idName {
+	
+}
+
+/*multiple tags with the same style*/
+.className {
+	
+}
+
+htmlTag, #idName, .className{
+	
+}
+
+/*inner tag style*/
+#idName innerHTMLTag{
+	
+}
+
+p, h1, h6{
+	text-align: center, right, left;
+	font-size: 50%, 16px, 1em;
+	font: font-size font-style font-family font-weight;
+	font-style: normal, italic, oblique;
+	font-family: Arial, times, Open Sans;
+	font-variant: normal, small-caps;
+	font-weight: bold, normal, inherit, lighter;
+	color: black #000000;
+}
+
+div{
+	margin: auto, 10%, 60px, 1em;
+	padding: 10%, 50px, 1em;
+	width: device-width, 100%, 400px, 100vw;
+	height: device-height, 100%, 400px, 100vh;
+	background-color: yellow, #FFFFFF;
+	background-image: imageUrl;
+	background-attachment: fixed, scroll, local;
+	background-size: percentage. cover. contain, length;
+}
