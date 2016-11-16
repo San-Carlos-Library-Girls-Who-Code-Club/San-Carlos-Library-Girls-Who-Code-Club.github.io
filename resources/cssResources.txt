@@ -1,20 +1,23 @@
 /*Tips:
-	*/*Comments go here*/
-	* To make webpage responsive to size of device use percentages
+	* /*Comments go here*/
+	* To make webpage responsive to size of device use percentages or vh and vw
 */
+/*style tags with the same tag name*/
 htmlTag {
 	
 }
 
+/*style a tag with a certain id*/
 #idName {
 	
 }
 
-/*multiple tags with the same style*/
+/*style multiple tags with the same class name*/
 .className {
 	
 }
 
+/*style a group of tags, idNames, and classNames*/
 htmlTag, #idName, .className{
 	
 }
@@ -24,24 +27,83 @@ htmlTag, #idName, .className{
 	
 }
 
+/*tags that are text*/
 p, h1, h6{
-	text-align: center, right, left;
-	font-size: 50%, 16px, 1em;
+	text-align: right; //text align right
+		    center; //text align center
+		    left; //text align left
+
+	font-size: 100%; //100% = 16px
+		   16px;
+		   12pt; //12pt = 16px
+		   1em;
+
 	font: font-size font-style font-family font-weight;
-	font-style: normal, italic, oblique;
-	font-family: Arial, times, Open Sans;
-	font-variant: normal, small-caps;
-	font-weight: bold, normal, inherit, lighter;
-	color: black #000000;
+
+	font-style: normal; //normal font
+		    italic; //sets the font to italic
+		    oblique; // sets the font to oblique
+
+	font-family: Arial, times, Open Sans; //sets the font and fallback font of text
+
+	font-variant: normal; displays normal font
+		      small-caps; //displays small-caps
+
+	font-weight: bold; //sets the font to bold
+		     normal; //normal character
+		     inherit; //inherits the character of the parent element
+		     lighter; //lighter character
+
+	color: black; //sets the font to a certain color
+	  	#000000; //hexadecimal of a color
 }
 
+/*all other tags (ex: div, img, buttons, tables)*/
 div{
-	margin: auto, 10%, 60px, 1em;
-	padding: 10%, 50px, 1em;
-	width: device-width, 100%, 400px, 100vw;
-	height: device-height, 100%, 400px, 100vh;
-	background-color: yellow, #FFFFFF;
-	background-image: imageUrl;
-	background-attachment: fixed, scroll, local;
-	background-size: percentage. cover. contain, length;
+	display: inline; //doesn’t start on a new line and only takes up as much width as necessary
+		  block; //stats on a new line and takes up the full width available
+		  inline-block; //inline elements that can have a width and a height
+		  none; //have no style
+
+	position: relative; //element is position relative to its normal position
+		   static; //elements render in order as they appear in document
+		   fixed; //element is position relative to browser
+		   absolute; //relative to its first positioned parent element
+
+	/*margin, margin-top, margin-left, margin-right, margin- bottom*/
+	margin: auto; //horizontally center the element
+		10%; //percentage of parent element
+		60px; //fixed pixels
+		1em; // 1em = 16px
+		10vh 10vw; //percentage of view height or width
+
+	/*padding, padding-top, padding-right, padding-left, padding-bottom*/
+	padding: 10%;
+		 50px;
+		 1em;
+		 10vw 10vh;
+
+	width: 100%;
+	       400px;
+	       10em;
+	       100vw;
+
+	height: 100%;
+	        400px;
+		10em;
+		100vh;
+
+	background-color: yellow; //sets the background color to a color
+			   #FFFFFF; //the hexadecimal of a certain color
+
+	background-image: url(imageUrl); //sets an image as the background
+
+	background-attachment: fixed; //background is fixed with regard to view
+				scroll; //background scrolls with the element
+				local; //background scrolls along with element content
+
+	background-size: percentage (100% 100%); //width and height of background image in percent of parent
+			  cover; //scale background to be as large as possible so background area is completely covered
+			  contain; //scale image to the largest size such that width and height fits the content area
+			  length (500px 500px); //sets the width and height of background image
 }
