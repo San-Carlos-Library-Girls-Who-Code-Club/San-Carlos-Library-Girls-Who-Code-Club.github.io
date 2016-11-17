@@ -97,13 +97,4 @@ div{
 			   #FFFFFF; //the hexadecimal of a certain color
 
 	background-image: url(imageUrl); //sets an image as the background
-
-	background-attachment: fixed; //background is fixed with regard to view
-				scroll; //background scrolls with the element
-				local; //background scrolls along with element content
-
-	background-size: percentage (100% 100%); //width and height of background image in percent of parent
-			  cover; //scale background to be as large as possible so background area is completely covered
-			  contain; //scale image to the largest size such that width and height fits the content area
-			  length (500px 500px); //sets the width and height of background image
 }
