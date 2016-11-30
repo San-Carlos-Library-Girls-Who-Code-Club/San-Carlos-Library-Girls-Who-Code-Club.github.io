@@ -1,0 +1,57 @@
+//Comment goes here or /*Comments go here*/
+
+//global variables (variables visible throughout the file or program)
+	var object = {value: 0}; //object
+	var wrongAnswers = 0;
+	var correctAnswers = 0; 
+	var questions = [] //empty array;
+	var answers = [7, "that"]; //array
+	var questionIndex = 0;
+
+//functions
+
+//function with parameters
+	/*parameters are passed by value except 
+	 *parameters that are objects which are passed by reference
+	 *passed by value: variable passed in the parameter only changes 
+	  its value in the function
+	 *passed by reference: variable passed in the parameter keeps the value
+	  that it gets when it's change in the function */
+	function checkAnswers(yourAnswer, index) {
+		if (yourAnswer == answers[index]) {
+			//Increments correctAnswer by 1
+			correctAnswers = countWrongOrCorrectAnswers(correctAnswers);
+
+			//Gives an alert if answer is correct
+			alert("Correct!");
+		} else {
+			//Increments wrongAnswer by 1
+			wrongAnswers = countWrongOrCorrectAnswers(wrongAnswers);
+
+			//Gives an alert if answer is incorrect
+			alert("Incorrect.");
+		}
+	}
+
+//function without parameters
+	function classRoomQuestion() {
+		//Gets an integer between 0 and 14
+		questionIndex = Math.floor(Math.random * 15);
+
+		//Creates a prompt with your question
+		var yourAnswer = prompt(questions[questionIndex], "your answer here");
+
+		//Checks whether your answer is correct
+		checkAnswers(yourAnswer, questionIndex);
+	}
+
+//function without parameters and returns
+	function returnWrongAnswers() {
+		return wrongAnswers;
+	}
+
+//function with parameters and returns 
+	function countWrongOrCorrectAnswers(countAnswers) {
+		countAnswers++;
+		return countAnswers; 
+	} 
