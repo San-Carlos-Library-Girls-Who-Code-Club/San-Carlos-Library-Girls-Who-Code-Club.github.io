@@ -7,6 +7,7 @@
 	var questions = [] //empty array;
 	var answers = [7, "that"]; //array
 	var questionIndex = 0;
+	var count = 0;
 
 //functions
 
@@ -35,14 +36,42 @@
 
 //function without parameters
 	function classRoomQuestion() {
-		//Gets an integer between 0 and 14
-		questionIndex = Math.floor(Math.random * 15);
+
+		//change the background
+		var background = document.getElementById("border");
+		background.background-image = "url(imageUrl)";
+		background.background-repeat = "no-repeat";
+		background.background-size = "cover";
+		
+		//Gets an integer between 0 and 12
+		questionIndex = Math.floor(Math.random * 13);
 
 		//Creates a prompt with your question
 		var yourAnswer = prompt(questions[questionIndex], "your answer here");
 
 		//Checks whether your answer is correct
 		checkAnswers(yourAnswer, questionIndex);
+
+		//Increment how many questions has been answer
+		count++;
+
+		//Go to the next room after answering 4 questions
+		if(count == 4){
+			location.href = "../lockerroom/index.html"
+		}
+	}
+
+	function createEventListeners() {
+
+		//Gets the binder image and makes it clickable
+		//calls the classRoomQuestion function when clicked
+		var binder = document.getElementById("binder");
+		if(binder.addEventListener) {
+			binder.addEventListener("click", classRoomQuestion, false);
+		}
+		else if (binder.attachEvent) {
+			binder.attachEvent("onclick", classRoomQuestion)
+		}
 	}
 
 //function without parameters and returns
@@ -55,3 +84,11 @@
 		countAnswers++;
 		return countAnswers; 
 	} 
+
+//makes things responsive when browser doesn't make them responsive for you
+if(window.addEventListener) {
+	window.addEventListener("load", createEventListeners, false);
+}
+else if (window.attachEvent) {
+	window.attachEvent("onload", createEventListeners)
+}
